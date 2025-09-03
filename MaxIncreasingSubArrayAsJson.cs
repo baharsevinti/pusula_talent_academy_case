@@ -1,5 +1,12 @@
 using System.Text.Json;
 
+⏺ /// <summary>
+  /// Finds the maximum sum increasing subarray from a list of integers and returns it as JSON.
+  /// Returns the contiguous subarray with strictly increasing elements that has the highest sum.
+  /// If no increasing sequence exists, returns the largest single element.
+  /// </summary>
+  /// <param name="numbers">List of integers to analyze for increasing subarrays</param>
+  /// <returns>JSON string containing the maximum sum increasing subarray</returns>
 static string MaxIncreasingSubArrayAsJson(List<int>? numbers)
 {
     // Handle edge cases
