@@ -3,8 +3,8 @@ using System.Text.Json;
 static string MaxIncreasingSubArrayAsJson(List<int>? numbers)
 {
     // Handle edge cases
-    if (numbers == null || numbers.Count == 0) return "[]";
-    if (numbers.Count == 1) return $"[{numbers[0]}]";
+    if (numbers == null || numbers.Count == 0) return JsonSerializer.Serialize(new List<int>());
+    if (numbers.Count == 1) return JsonSerializer.Serialize(new List<int> { numbers[0] });
 
     List<int> bestSubarray = new List<int>();
     int bestSum = int.MinValue;
