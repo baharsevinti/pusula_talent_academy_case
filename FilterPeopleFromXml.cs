@@ -1,3 +1,6 @@
+using System.Text.Json;
+using System.Xml.Linq;
+
 /// <summary>
 /// Filters people from XML data based on specific criteria and returns results as JSON.
 /// Criteria: Age > 30, Department = "IT", Salary > 5000, HireDate < 2019
